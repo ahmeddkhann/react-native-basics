@@ -1,14 +1,15 @@
 import React from 'react';
-import { SafeAreaView, View, Text, StyleSheet } from 'react-native';
+import { SafeAreaView, View, Text, StyleSheet, useColorScheme } from 'react-native';
 
 const Home = () => {
+  const lightMode = useColorScheme() === "light"
   return (
-    <SafeAreaView style={styles.container}>
+    <SafeAreaView style={ lightMode? styles.container2 : styles.container1}>
       <View style={styles.content}>
-        <Text style={styles.text1}>
+        <Text style={lightMode? styles.text2 : styles.text1}>
           Hello 
         </Text>
-        <Text style={styles.text2}>
+        <Text style={lightMode? styles.text2 : styles.text1}>
           Ahmed Khan
         </Text>
       </View>
@@ -17,9 +18,13 @@ const Home = () => {
 };
 
 const styles = StyleSheet.create({
-  container: {
+  container1: {
     flex: 1,                    
-    backgroundColor: 'blue',     
+    backgroundColor: 'white',     
+  },
+  container2: {
+    flex: 1,                    
+    backgroundColor: 'black',     
   },
   content: {
     flex: 1,                    
@@ -27,7 +32,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',        
   },
   text1: {
-    color: 'white',
+    color: 'red',
     fontSize: 40,
   },
   text2: {
