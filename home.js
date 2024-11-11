@@ -1,33 +1,39 @@
-import React from 'react'
-import { View, SafeAreaView, Text, StyleSheet} from 'react-native'
-import { useColorScheme } from 'react-native'
+import React from 'react';
+import { SafeAreaView, View, Text, StyleSheet } from 'react-native';
 
 const Home = () => {
-
   return (
-   
-      <SafeAreaView style={styles.safeArea}>
-        <View style={styles.container}>
-        <Text style= {styles.text}>
-          Hello Ahmad!
+    <SafeAreaView style={styles.container}>
+      <View style={styles.content}>
+        <Text style={styles.text1}>
+          Hello 
+        </Text>
+        <Text style={styles.text2}>
+          Ahmed Khan
         </Text>
       </View>
-      </SafeAreaView>
-  )
-}
+    </SafeAreaView>
+  );
+};
 
 const styles = StyleSheet.create({
   container: {
-    alignItems: "center",
-    padding: 40
+    flex: 1,                    
+    backgroundColor: 'blue',     
   },
-  safeArea: {
-    backgroundColor: "black"
+  content: {
+    flex: 1,                    
+    justifyContent: 'center',    
+    alignItems: 'center',        
   },
-  text: {
-    color: "white",
-    fontSize: 20
-  }
-})
+  text1: {
+    color: 'white',
+    fontSize: 40,
+  },
+  text2: {
+    color: 'white',
+    fontSize: 40,
+  },
+});
 
-export default Home
+export default Home;
