@@ -1,17 +1,18 @@
 import React from 'react';
 import { View, StyleSheet } from 'react-native';
-import Home from './home';
+import FlatCards from './project1/flatCards';
+
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Home />
+      <FlatCards/>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,    // Ensures the root View takes the full screen
+    flex: 1,    
   },
 });

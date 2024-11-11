@@ -1,7 +1,7 @@
 import React from 'react';
 import { SafeAreaView, View, Text, StyleSheet, useColorScheme } from 'react-native';
 
-const Home = () => {
+const Basics = () => {
   const lightMode = useColorScheme() === "light"
   return (
     <SafeAreaView style={ lightMode? styles.container2 : styles.container1}>
@@ -41,4 +41,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Home;
+export default Basics;
