@@ -2,6 +2,7 @@ import React from 'react';
 import { View, StyleSheet, ScrollView } from 'react-native';
 import FlatCards from './project1/flatCards';
 import Scrolling from './project1/Scrolling';
+import FancyCards from './project1/FancyCards';
 
 export default function App() {
   return (
@@ -10,6 +11,7 @@ export default function App() {
         <FlatCards />
         <View style={styles.spacing} />
         <Scrolling />
+        <FancyCards/>
       </ScrollView>
     </View>
   );
