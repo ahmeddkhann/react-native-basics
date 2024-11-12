@@ -1,18 +1,25 @@
 import React from 'react';
-import { View, StyleSheet } from 'react-native';
+import { View, StyleSheet, ScrollView } from 'react-native';
 import FlatCards from './project1/flatCards';
-
+import Scrolling from './project1/Scrolling';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <FlatCards/>
+      <ScrollView>
+        <FlatCards />
+        <View style={styles.spacing} />
+        <Scrolling />
+      </ScrollView>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,    
+    flex: 1,
+  },
+  spacing: {
+    marginVertical: 10,  // Adjust this value for a decent space between components
   },
 });
