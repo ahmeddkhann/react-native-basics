@@ -4,6 +4,7 @@ import FlatCards from './project1/flatCards';
 import Scrolling from './project1/Scrolling';
 import FancyCards from './project1/FancyCards';
 import ActionCard from './project1/ActionCard';
+import ContactList from './project1/ContactList';
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
         <Scrolling />
         <FancyCards/>
         <ActionCard/>
+        <ContactList/>
       </ScrollView>
     </View>
   );
